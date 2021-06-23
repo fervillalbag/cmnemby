@@ -10,6 +10,10 @@ export const Container = styled.div`
     grid-column: 2 / 3;
   }
 
+  @media (max-width: 768px) {
+    height: 450px;
+  }
+
   .mapouter {
     border-radius: 30px;
     overflow: hidden;
