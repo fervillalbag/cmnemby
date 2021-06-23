@@ -13,5 +13,9 @@ export const Container = styled.div`
   .mapouter {
     border-radius: 30px;
     overflow: hidden;
+
+    @media (max-width: 768px) {
+      border-radius: 10px;
+    }
   }
 `

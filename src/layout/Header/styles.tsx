@@ -46,53 +46,40 @@ export const Container = styled.div`
     }
 
     &-media {
-      position: relative;
-      height: 450px;
-
-      @media (max-width: 1460px) {
-        transform: translateX(-4rem);
-      }
-
-      @media (max-width: 1290px) {
-        transform: translateX(-6rem);
-      }
-
-      @media (max-width: 1090px) {
-        transform: translateX(-7rem);
-      }
+      display: grid;
+      grid-template-columns: 80px 50px 80px 50px 80px;
+      grid-template-rows: repeat(4, 80px);
+      justify-content: center;
+      padding: 2rem 0;
 
       @media (max-width: 768px) {
-        transform: scale(0.8) translateX(-9.5rem);
+        grid-template-columns: repeat(5, 1fr);
       }
 
       &__image {
         width: 100%;
-        position: absolute;
-        outline: 1rem solid ${props => props.theme.colors.secondary};
+        height: 100%;
+        object-fit: cover;
+        outline: 10px solid ${props => props.theme.colors.secondary};
 
         &:nth-child(1) {
-          width: 150px;
-          left: 23.2rem;
-          bottom: 14.8rem;
-          transform: translateX(-100%);
+          grid-column: 2 / 4;
+          grid-row: 2 / 3;
         }
 
         &:nth-child(2) {
-          width: 120px;
-          bottom: 2.5rem;
-          left: 8.4rem;
+          grid-column: 3 / 5;
+          grid-row: 3 / 4;
         }
 
         &:nth-child(3) {
-          width: 150px;
-          left: 16.9rem;
-          bottom: 7.5rem;
+          grid-column: 1 / 3;
+          grid-row: 3 / 5;
         }
 
         &:nth-child(4) {
-          width: 120px;
-          left: 24rem;
-          bottom: 15rem;
+          grid-column: 4 / 6;
+          grid-row: 1 / 3;
         }
       }
     }
