@@ -8,8 +8,8 @@ export default createGlobalStyle`
   }
   
   body {
-    background-color: ${props => props.theme.colors.background};
-    color: ${props => props.theme.colors.text};
-    font-family: 'Roboto';
+    background-color: ${props => props.theme.colors.light};
+    font-family: ${props => props.theme.font.base};
+    font-weight: 300;
   }
 `

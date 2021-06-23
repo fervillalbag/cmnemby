@@ -44,8 +44,12 @@ export default class MyDocument extends Document {
           <Head>
             <meta charSet="utf-8" />
             <link
-              href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap"
+              href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600;700;900&display=swap"
               rel="stylesheet"
+            />
+            <link
+              rel="stylesheet"
+              href="https://necolas.github.io/normalize.css/8.0.1/normalize.css"
             />
           </Head>
           <body>
