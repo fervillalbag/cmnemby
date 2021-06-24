@@ -31,7 +31,7 @@ export const Header: React.FC = () => {
             promoviendo la salud y mejorando la calidad de vida de los usuarios.
           </p>
 
-          <Link href="/">
+          <Link href="/nosotros">
             <a className="header-main__link">Acerca de nosotros</a>
           </Link>
         </div>
