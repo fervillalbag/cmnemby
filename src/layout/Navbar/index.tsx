@@ -30,6 +30,7 @@ export const Navbar: React.FC = () => {
               className="navbar-social"
               target="_blank"
               rel="external nofollow noopener noreferrer"
+              aria-label="Enlace para acceder al número de WhatsApp"
             >
               <FaWhatsapp />
             </a>
@@ -39,12 +40,16 @@ export const Navbar: React.FC = () => {
               className="navbar-social"
               target="_blank"
               rel="external nofollow noopener noreferrer"
+              aria-label="Enlace para acceder a la ubicación a través de Google Maps"
             >
               <FaMapMarkerAlt />
             </a>
           </Link>
           <Link href="mailto:centromediconemby@gmail.com">
-            <a className="navbar-social">
+            <a
+              className="navbar-social"
+              aria-label="Enlace para enviar un correo Electrónico"
+            >
               <FaEnvelope />
             </a>
           </Link>
