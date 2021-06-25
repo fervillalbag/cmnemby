@@ -43,6 +43,11 @@ export default class MyDocument extends Document {
         <Html>
           <Head>
             <meta charSet="utf-8" />
+            <title>Centro Médico de Ñemby</title>
+            <meta
+              name="description"
+              content="Centro Medico Ñemby es una empresa dedicada al servicio y cuidado de la salud integral de las personas."
+            />
             <link
               href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600;700;900&display=swap"
               rel="stylesheet"

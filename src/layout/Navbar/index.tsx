@@ -7,16 +7,15 @@ import { useRouter } from 'next/dist/client/router'
 
 export const Navbar: React.FC = () => {
   const router = useRouter()
-
   return (
     <Container>
       <div className="navbar">
         <div className="navbar-top">
-          <Link href="/">
+          {/* <Link href="/">
             <a className="navbar-brand">
               <FaHome />
             </a>
-          </Link>
+          </Link> */}
         </div>
         <div className="navbar-bottom">
           {router.pathname === '/nosotros' && (
@@ -30,7 +29,7 @@ export const Navbar: React.FC = () => {
             <a
               className="navbar-social"
               target="_blank"
-              rel="nofollow noopener noreferrer"
+              rel="external nofollow noopener noreferrer"
             >
               <FaWhatsapp />
             </a>
@@ -39,7 +38,7 @@ export const Navbar: React.FC = () => {
             <a
               className="navbar-social"
               target="_blank"
-              rel="nofollow noopener noreferrer"
+              rel="external nofollow noopener noreferrer"
             >
               <FaMapMarkerAlt />
             </a>
