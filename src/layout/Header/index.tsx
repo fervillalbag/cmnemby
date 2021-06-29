@@ -7,10 +7,12 @@ export const Header: React.FC = () => {
   return (
     <Container>
       <header className="header">
-        <h1 className="header__title">
-          Centro Médico de <br />
-          Ñemby
-        </h1>
+        <div className="brand">
+          <img src="/logo.jpeg" alt="" className="brand-image" />
+          <h1 className="header__title">
+            Centro Médico <span>de Ñemby</span>
+          </h1>
+        </div>
 
         <div className="header-main">
           <div className="header-media">

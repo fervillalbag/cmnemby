@@ -43,6 +43,19 @@ export const Container = styled.div`
       margin: 0;
       font-size: 2rem;
       color: ${props => props.theme.colors.primary};
+      padding-left: 1.5rem;
+
+      span {
+        display: block;
+
+        @media (max-width: 768px) {
+          display: inline;
+        }
+      }
+
+      @media (max-width: 768px) {
+        font-size: 1.8rem;
+      }
     }
 
     &-media {
@@ -110,6 +123,15 @@ export const Container = styled.div`
         padding: 0.5rem 1rem;
         font-weight: 600;
       }
+    }
+  }
+
+  .brand {
+    display: flex;
+    align-items: center;
+
+    &-image {
+      width: 80px;
     }
   }
 `
