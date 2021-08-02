@@ -16,10 +16,10 @@ export const Header: React.FC = () => {
 
         <div className="header-main">
           <div className="header-media">
-            <img src="/image1.jpg" alt="" className="header-media__image" />
-            <img src="/image2.jpg" alt="" className="header-media__image" />
-            <img src="/image3.jpg" alt="" className="header-media__image" />
-            <img src="/image4.jpg" alt="" className="header-media__image" />
+            <img src="/image1.jpeg" alt="" className="header-media__image" />
+            <img src="/image3.jpeg" alt="" className="header-media__image" />
+            <img src="/image4.jpeg" alt="" className="header-media__image" />
+            <img src="/image2.jpeg" alt="" className="header-media__image" />
           </div>
 
           <p className="header-main__description">
